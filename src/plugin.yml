@@ -1,0 +1,7 @@
+name: ChatBot
+main: chatbot.ChatBot
+version: 0.1
+commands:
+  Appelflap:
+      description: The Secret of the Appelflap
+      usage: /Appelflap
