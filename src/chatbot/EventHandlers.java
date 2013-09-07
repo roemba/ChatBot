@@ -42,7 +42,7 @@ public class EventHandlers implements Listener {
     @EventHandler
     public void PlayerInteract(PlayerInteractEvent event){
            
-        if (event.getPlayer().getItemInHand().getType().equals(Material.BLAZE_ROD)){
+        if (event.getPlayer().getItemInHand().getType().equals(Material.BLAZE_ROD) && ChatBot.chatbot.getConfig().getBoolean("setBlazeRodWeapon")){
             
             Player player = event.getPlayer();
             
@@ -64,9 +64,7 @@ public class EventHandlers implements Listener {
             event.getEntity().getWorld().createExplosion(event.getEntity().getLocation(), 4F, true);
             event.getEntity().getWorld().strikeLightning(event.getEntity().getLocation());
         
-    }
-    
-    
+        }
     }
 }
 

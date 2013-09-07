@@ -28,6 +28,8 @@ public final class ChatBot extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new EventHandlers(),this);
         
         TNTSpawner.TNT_Timer();
+        
+        this.saveDefaultConfig();
     }
     
     //What to do when plugin is disabled
